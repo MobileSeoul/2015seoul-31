@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">서울발자취</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="spinner_prompt">원하는 카테고리를 선택하세요</string>
+</resources>

@@ -1,0 +1,120 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    tools:context=".LoginActivity" >
+
+	<LinearLayout
+	        android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:orientation="vertical"
+    		android:background="@drawable/title_signup"
+    		android:id="@+id/toplay"
+    		/>
+	
+	<LinearLayout
+	        android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:orientation="vertical"
+    		android:layout_below="@+id/toplay"
+    		android:layout_marginLeft="40dp"
+    		android:layout_marginRight="40dp"
+    		android:id="@+id/tvLay"
+    		>
+    		
+			  <TextView
+		        android:id="@+id/textView1"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignLeft="@+id/et_pn"
+		        android:layout_marginTop="76dp"
+		        android:textColor="#f25e5e"
+		        android:textSize="18sp"
+		        android:textStyle="bold"
+		        android:text="이름"
+		         />
+		    
+		    <EditText
+		        android:id="@+id/et_name"
+		        android:layout_width="280dp"
+		        android:layout_height="48dp"
+		        android:textColor="#000000"
+		        android:textSize="18sp"
+		        android:layout_alignLeft="@+id/textView1"
+		        android:layout_below="@+id/textView1"
+		        android:ems="10" />
+		
+		    <TextView
+		        android:id="@+id/textView2"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignLeft="@+id/et_pn"
+		        android:layout_below="@+id/et_name"
+		        android:layout_marginTop="12dp"
+		        android:textColor="#f25e5e"
+		        android:textSize="18sp"
+		        android:textStyle="bold"
+		        android:text="휴대폰 번호" />
+		
+		    <EditText
+		        android:id="@+id/et_pn"
+		        android:layout_width="match_parent"
+		        android:layout_height="48dp"
+		        android:textColor="#000000"
+		        android:textSize="18sp"
+		        android:layout_below="@+id/textView2"
+		        android:inputType="number"
+		        android:ems="10" />
+		
+		    
+		    <TextView
+		        android:id="@+id/textView3"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignLeft="@+id/et_pn"
+		        android:layout_below="@+id/et_pn"
+		         android:textColor="#f25e5e"
+		        android:textSize="18sp"
+		        android:textStyle="bold"
+		        android:layout_marginTop="12dp"
+		        android:text="이메일 주소" />    
+		        
+		    <EditText
+		        android:id="@+id/et_email"
+		        android:layout_width="match_parent"
+		        android:layout_height="48dp"
+		        android:textColor="#000000"
+		        android:textSize="18sp"
+		        android:layout_below="@+id/textView3"
+		        android:inputType="textEmailAddress"
+		        android:ems="10" />
+    		</LinearLayout>
+   
+    
+
+    <CheckBox
+        android:id="@+id/chk_auto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvLay"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="12dp"
+        android:text="자동 로그인"
+        android:textSize="18sp"
+	    android:textStyle="bold"
+        android:textColor="#f2525e"
+        />
+    
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="280dp"
+        android:layout_height="48dp"
+		android:layout_below="@+id/chk_auto"
+		android:layout_centerHorizontal="true"
+		android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+		android:layout_marginTop="12dp"
+        android:background="@drawable/btn_login" />
+    
+</RelativeLayout>

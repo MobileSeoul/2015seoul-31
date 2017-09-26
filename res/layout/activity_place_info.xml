@@ -1,0 +1,246 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ScrollView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+	android:layout_marginLeft="8dp"
+	android:layout_marginRight="8dp"
+    android:background="#ffffff"
+     >
+  
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+        
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/title_spot"
+        >
+        <Button
+           android:id="@+id/toplay_backBtn" 
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" 
+           android:layout_alignParentLeft="true"
+           android:layout_centerVertical="true"
+           android:layout_marginLeft="13dp"
+           android:background="@drawable/icon_back" 
+            />
+        <Button
+           android:id="@+id/toplay_homeBtn" 
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" 
+           android:layout_alignParentRight="true"
+           android:layout_centerVertical="true"
+           android:layout_marginRight="13dp"
+           android:background="@drawable/icon_home"
+            />    
+	</RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="16dp" >
+        
+     <ProgressBar
+        android:id="@+id/basicImageProBar"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="150dp"
+        android:layout_centerHorizontal="true"
+        style="@android:style/Widget.ProgressBar.Large"
+        android:visibility="gone"/>
+        
+        <TextView
+            android:id="@+id/palceInfoNameTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="장소명"
+            android:textSize="30dp"
+            android:textColor="#f25e5e"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            
+             />
+
+        <ImageView
+            android:id="@+id/placeInfoImg"
+            android:layout_width="336dp"
+            android:layout_height="216dp"
+            android:layout_marginBottom="2dp"
+            android:layout_below="@id/palceInfoNameTv"
+             />
+
+        <LinearLayout
+            android:id="@+id/lay1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal"
+            android:layout_below="@id/placeInfoImg" >
+            
+
+            <TextView
+                android:id="@+id/placeInfoAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="주소"
+                android:textColor="#555a5e"
+                 />
+
+            <TextView
+                android:id="@+id/placeInfoAddressTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#8c8c8c" />
+        </LinearLayout>
+
+        <LinearLayout
+             android:id="@+id/lay2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal"
+            android:layout_below="@id/lay1" >
+
+            <TextView
+                android:id="@+id/placeInfoPhoneNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="대표번호"
+                android:textColor="#555a5e" />
+
+            <TextView
+                android:id="@+id/placeInfoPhoneNumTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#8c8c8c" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lay3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal"
+            android:layout_below="@id/lay2" >
+
+            <TextView
+                android:id="@+id/palceInfoOpenTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="운영시간"
+                android:textColor="#555a5e" />
+
+            <TextView
+                android:id="@+id/palceInfoOpenTimeTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#8c8c8c" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lay4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:orientation="horizontal"
+            android:layout_below="@id/lay3" >
+
+            <TextView
+                android:id="@+id/palceInfoHoliday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="휴무일"
+                android:textColor="#555a5e" />
+
+            <TextView
+                android:id="@+id/palceInfoHolidayTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#8c8c8c" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lay5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical"
+            android:layout_below="@id/lay4" >
+
+            <TextView
+                android:id="@+id/palceInfoDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:text="상세정보"
+                android:textColor="#555a5e" />
+
+            <TextView
+                android:id="@+id/palceInfoDetailTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:textColor="#8c8c8c" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lay6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:orientation="vertical"
+            android:layout_below="@id/lay5" >
+
+            <TextView
+                android:id="@+id/palceInfoTransportation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:text="교통정보"
+                android:textColor="#555a5e" />
+
+            <TextView
+                android:id="@+id/palceInfoTransportationTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:textColor="#8c8c8c" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lay7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/lay6" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="지도"
+                android:textColor="#555a5e"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+              <fragment
+                  android:id="@+id/map"
+                  android:name="com.example.GoogleMapVersion2.Fragment"
+                  android:layout_width="fill_parent"
+                  android:layout_height="300dp"
+                  class="com.google.android.gms.maps.MapFragment" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>
+</ScrollView>

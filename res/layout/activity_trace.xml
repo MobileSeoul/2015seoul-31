@@ -1,0 +1,146 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DrawActivity"
+    android:background="#ffffff" >
+<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/icon_title"
+        >
+        <Button
+           android:id="@+id/toplay_backBtn" 
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" 
+           android:layout_alignParentLeft="true"
+           android:layout_centerVertical="true"
+           android:layout_marginLeft="13dp"
+           android:background="@drawable/icon_back" 
+            />
+        <Button
+           android:id="@+id/toplay_homeBtn" 
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" 
+           android:layout_alignParentRight="true"
+           android:layout_centerVertical="true"
+           android:layout_marginRight="13dp"
+           android:background="@drawable/icon_home"
+            />    
+	</RelativeLayout>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="8dp"
+         >
+  	   <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="vertical" >
+        <TextView
+            android:id="@+id/current_day"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#f25e5e"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/subTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="발자취를 남겨보세요"
+            android:textColor="#8c8c8c"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="8dp"
+             />
+        
+         </LinearLayout>
+            <Button
+                android:id="@+id/done"
+                android:layout_width="48dp"
+                android:layout_height="24dp" 
+                android:layout_alignParentRight="true"            
+                android:background="@drawable/icon_send"
+                android:layout_marginRight="8dp"
+                android:layout_centerVertical="true"
+                 />
+            <Button
+            android:id="@+id/optionBack"
+            android:layout_width="48dp"
+            android:layout_height="24dp"
+            android:layout_marginRight="8dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"  
+            android:visibility="gone"
+            android:background="@drawable/icon_save" />
+            
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/image_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="2dp" >
+
+        <ImageView
+            android:id="@+id/background"
+            android:layout_width="344dp"
+            android:layout_height="412dp"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:background="#ffffff"
+			/>
+
+        <FrameLayout
+            android:id="@+id/pen_option_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|bottom"
+            android:orientation="horizontal" >
+        </FrameLayout>
+        
+       <ProgressBar
+        android:id="@+id/basicImageProBar"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="150dp"
+        android:visibility="gone"
+        style="@android:style/Widget.ProgressBar.Large"/>
+       
+       <TextView
+        android:id="@+id/loadingText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="240dp"
+        android:textColor="#8c8c8c"
+        android:textSize="18sp"
+        android:text="낙서를 업로드 중입니다..."
+        android:visibility="gone"
+        />
+       
+       
+    </FrameLayout>
+
+    <!-- 인플레이션 할 부분 -->
+
+    <LinearLayout
+        android:id="@+id/footer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+		  >
+    </LinearLayout>
+
+</LinearLayout>

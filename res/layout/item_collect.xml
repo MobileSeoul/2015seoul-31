@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:background="#f5f5f5"
+
+     >
+    
+    <ImageView
+        android:id="@+id/collectItem_Img"
+        android:layout_width="match_parent"
+    	android:layout_height="140dp"
+    	android:layout_centerInParent="true"
+     />
+    <TextView 
+        android:id="@+id/collectItem_placeTxt"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+        android:text="장소"
+        android:background="#f5f5f5"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:textColor="#ffffff" 
+        android:textSize="16dp"       
+        />
+
+    <TextView
+        android:id="@+id/collectItem_dateTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f5f5f5"
+        android:gravity="center"
+        android:text="날짜정보"
+        android:textColor="#ffffff"
+        android:layout_alignBottom="@+id/collectItem_Img"
+        android:layout_marginBottom="20dp"
+        android:textSize="16dp"  
+         />
+
+</RelativeLayout>

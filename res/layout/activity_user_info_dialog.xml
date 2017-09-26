@@ -1,0 +1,120 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="280dp"
+    android:layout_height="wrap_content"
+    tools:context="com.example.seouluserinfo.UserInfoDialog"
+    android:orientation="vertical"
+    android:background="#f5f5f5" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/info"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:text="사용자 정보"
+        android:textSize ="22sp" 
+        android:textColor="#f25e5e"
+        android:textStyle="bold"
+        android:layout_gravity="center"/>
+    
+
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:layout_marginLeft="40dp"
+          android:layout_marginBottom="8dp"
+          >
+          
+          <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="이름"
+            android:layout_marginRight="8dp"
+            android:textColor="#f25e5e"
+            android:textSize="18sp"
+            />
+          <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dialName"
+            android:textColor="#555a5e"
+            android:textSize="14sp"/>
+      </LinearLayout>
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:layout_marginLeft="40dp"
+           android:layout_marginBottom="8dp"
+          >
+          
+          <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="전화번호"
+            android:layout_marginRight="8dp"
+            android:textColor="#f25e5e"
+            android:textSize="18sp"
+            />
+          <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dialPhonenum"
+            android:textColor="#555a5e"
+            android:textSize="14sp"/>
+      </LinearLayout>
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:layout_marginLeft="40dp"
+           android:layout_marginBottom="8dp"
+          >
+          
+          <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="이메일"
+            android:layout_marginRight="8dp"
+            android:textColor="#f25e5e"
+            android:textSize="18sp"
+            />
+          <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dialEmail"
+            android:textColor="#555a5e"
+            android:textSize="14sp"/>
+      </LinearLayout>
+      
+       <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:layout_marginLeft="40dp"
+          android:layout_marginBottom="16dp"
+          >
+          
+          <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="낙서개수"
+            android:layout_marginRight="8dp"
+            android:textColor="#f25e5e"
+            android:textSize="18sp"
+            />
+          <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/myDrawNum"
+            android:textColor="#555a5e"
+            android:textSize="14sp"
+            android:text="loading.."
+            />
+      </LinearLayout>
+        
+ 
+    
+</LinearLayout>

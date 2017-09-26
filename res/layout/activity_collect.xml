@@ -1,0 +1,83 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+
+     >
+ <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/title_all"
+        android:id="@+id/toplay"
+        >
+        <Button
+           android:id="@+id/toplay_backBtn" 
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" 
+           android:layout_alignParentLeft="true"
+           android:layout_centerVertical="true"
+           android:layout_marginLeft="13dp"
+           android:background="@drawable/icon_back" 
+            />
+        <Button
+           android:id="@+id/toplay_homeBtn" 
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" 
+           android:layout_alignParentRight="true"
+           android:layout_centerVertical="true"
+           android:layout_marginRight="13dp"
+           android:background="@drawable/icon_home"
+            />    
+	</RelativeLayout>
+	
+
+ 
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="44dp"
+             
+        >
+        <EditText 
+           android:id="@+id/collectSearchEditTxt" 
+           android:layout_width="232dp"
+           android:layout_height="44dp" 
+           android:textSize="10dp"
+           android:hint="방문한 장소를 입력하세요"
+           android:background="#f5f5f5"
+           />
+        <Button 
+           android:id="@+id/collectSearchBtn" 
+           android:layout_width="44dp"
+           android:layout_height="44dp" 
+           android:background="@drawable/btn_search"
+           android:layout_gravity="center"
+           />
+    </LinearLayout>
+    
+     	 <ProgressBar
+        android:id="@+id/collectPb"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+		android:layout_gravity="center"
+		android:layout_marginTop="100dp"
+        style="@android:style/Widget.ProgressBar.Large"
+        android:visibility="gone"
+        />
+    
+    <ListView
+         android:id="@+id/collectListView"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:scrollbarAlwaysDrawVerticalTrack="false"
+         android:dividerHeight="12dp"
+         android:divider="#ffffff"   
+         android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"    
+        />
+</LinearLayout>

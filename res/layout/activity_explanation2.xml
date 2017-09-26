@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/icon_title"
+        >
+        <Button
+           android:id="@+id/toplay_backBtn" 
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" 
+           android:layout_alignParentLeft="true"
+           android:layout_centerVertical="true"
+           android:layout_marginLeft="13dp"
+           android:background="@drawable/icon_back" 
+            />
+        <Button
+           android:id="@+id/toplay_homeBtn" 
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" 
+           android:layout_alignParentRight="true"
+           android:layout_centerVertical="true"
+           android:layout_marginRight="13dp"
+           android:background="@drawable/icon_home"
+            />    
+	</RelativeLayout>
+
+	<ViewFlipper
+		android:id="@+id/viewFlipper"  
+	    android:layout_width="fill_parent" 
+	    android:layout_height="fill_parent"
+	    >  
+		    <TextView
+		    android:id="@+id/view1"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:layout_gravity="center"
+		    android:background="@drawable/info_01"
+		     />
+	    <TextView
+		    android:id="@+id/view2"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:layout_gravity="center"
+		    android:background="@drawable/info_02"
+		     />
+		<TextView
+		    android:id="@+id/view3"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:layout_gravity="center"
+		    android:background="@drawable/info_03"
+		    />
+		
+		<TextView
+		    android:id="@+id/view4"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:layout_gravity="center"
+		    android:background="@drawable/info_04"
+		    />
+	</ViewFlipper>
+
+
+</LinearLayout>
+    
+        
+        

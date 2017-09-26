@@ -1,0 +1,103 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/icon_title"
+        >
+        <Button
+           android:id="@+id/toplay_backBtn" 
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" 
+           android:layout_alignParentLeft="true"
+           android:layout_centerVertical="true"
+           android:layout_marginLeft="13dp"
+           android:background="@drawable/icon_back" 
+            />
+        <Button
+           android:id="@+id/toplay_homeBtn" 
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" 
+           android:layout_alignParentRight="true"
+           android:layout_centerVertical="true"
+           android:layout_marginRight="13dp"
+           android:background="@drawable/icon_home"
+            />    
+	</RelativeLayout>
+	
+    <TextView
+        android:id="@+id/placeInfoTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="#f25e5e"
+        android:textSize="18sp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        />
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" >
+        
+    <ImageView
+        android:id="@+id/gpsloadingImg"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:background="@drawable/icon_gpsing"
+
+        />
+        <ProgressBar
+        android:id="@+id/drawListprogressBar"
+        style="@android:style/Widget.ProgressBar.Large"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        />
+        
+
+        <GridView
+            android:id="@+id/gridViewImages"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:horizontalSpacing="10dp"
+            android:numColumns="3"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:verticalSpacing="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:columnWidth="108dp"
+             >
+        </GridView>
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_gravity="right|bottom"
+            android:layout_margin="15dp"
+            android:background="@drawable/icon_realdraw" />
+        
+        <ImageButton
+            android:id="@+id/testButton"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_gravity="left|bottom"
+            android:layout_margin="15dp"
+            android:background="@drawable/icon_testdraw" />
+        
+    </FrameLayout>
+
+</LinearLayout>

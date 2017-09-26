@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/color_palette"
+    android:layout_width="344dp"
+    android:layout_height="68dp"
+  	android:layout_marginBottom="2dp"
+  	android:layout_marginLeft="8dp"
+    android:orientation="vertical"
+    android:background="@drawable/bar_color" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="26dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp" >
+        <Button 
+            android:id="@+id/color_1"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+			android:background="@drawable/selector_draw_color_1"
+            android:layout_marginRight="16dp"/>
+        
+        <Button 
+            android:id="@+id/color_2"
+        	android:layout_width="28dp"
+            android:layout_height="28dp"
+			android:background="@drawable/selector_draw_color_2"
+            android:layout_marginRight="16dp"/>
+        
+        <Button 
+            android:id="@+id/color_3"
+			android:layout_width="28dp"
+            android:layout_height="28dp"
+			android:background="@drawable/selector_draw_color_3"
+            android:layout_marginRight="16dp"/>
+        
+        <Button 
+            android:id="@+id/color_4"
+			android:layout_width="28dp"
+            android:layout_height="28dp"
+			android:background="@drawable/selector_draw_color_4"
+            android:layout_marginRight="16dp"/>
+        
+        <Button 
+            android:id="@+id/color_5"
+			android:layout_width="28dp"
+            android:layout_height="28dp"
+			android:background="@drawable/selector_draw_color_5"
+            android:layout_marginRight="16dp"/>
+        <Button 
+            android:id="@+id/color_6"
+			android:layout_width="28dp"
+            android:layout_height="28dp"
+			android:background="@drawable/selector_draw_color_6"
+            android:layout_marginRight="16dp"/>
+        <Button 
+            android:id="@+id/color_7"
+			android:layout_width="28dp"
+            android:layout_height="28dp"
+			android:background="@drawable/selector_draw_color_7"
+            android:layout_marginRight="16dp"/>      
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="26dp"
+        android:orientation="horizontal" >
+
+        <Button 
+            android:id="@+id/color_8"
+			android:layout_width="28dp"
+            android:layout_height="28dp"
+			android:background="@drawable/selector_draw_color_8"
+            android:layout_marginRight="16dp"/>
+        <Button 
+            android:id="@+id/color_9"
+			android:layout_width="28dp"
+            android:layout_height="28dp"
+			android:background="@drawable/selector_draw_color_9"
+            android:layout_marginRight="16dp"/>
+        <Button 
+            android:id="@+id/color_10"
+			android:layout_width="28dp"
+            android:layout_height="28dp"
+			android:background="@drawable/selector_draw_color_10"
+            android:layout_marginRight="16dp"/>
+         <Button 
+            android:id="@+id/color_11"
+			android:layout_width="28dp"
+            android:layout_height="28dp"
+			android:background="@drawable/selector_draw_color_11"
+            android:layout_marginRight="16dp"/>
+        <Button 
+            android:id="@+id/color_12"
+			android:layout_width="28dp"
+            android:layout_height="28dp"
+			android:background="@drawable/selector_draw_color_12"
+            android:layout_marginRight="16dp"/>
+        <Button 
+            android:id="@+id/color_13"
+			android:layout_width="28dp"
+            android:layout_height="28dp"
+			android:background="@drawable/selector_draw_color_13"
+            android:layout_marginRight="16dp"/>
+        <Button 
+            android:id="@+id/color_14"
+			android:layout_width="28dp"
+            android:layout_height="28dp"
+			android:background="@drawable/selector_draw_color_14"
+            android:layout_marginRight="16dp"/>    
+    </LinearLayout>
+    
+</LinearLayout>

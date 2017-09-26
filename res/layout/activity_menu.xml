@@ -1,0 +1,103 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#ffffff">
+    <RelativeLayout      
+	  android:layout_width="fill_parent"
+	  android:layout_height="60dp"
+	  android:background="@drawable/icon_title"
+	  >
+	  
+      
+	  <Button
+           android:id="@+id/helpBtn" 
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" 
+           android:layout_alignParentLeft="true"
+           android:layout_centerVertical="true"
+           android:layout_marginLeft="13dp"
+           android:background="@drawable/icon_help" 
+            />
+	  <Button
+	      android:id="@+id/userBtn" 
+	      android:layout_width="wrap_content"
+	  	  android:layout_height="wrap_content"
+	      android:layout_alignParentRight="true"
+	      android:layout_centerVertical="true"
+	      android:layout_marginRight="13dp"
+	      android:background="@drawable/icon_userinfo"
+	      />
+	  </RelativeLayout>
+	  
+    <LinearLayout
+        android:layout_width="match_parent"
+	  	android:layout_height="match_parent"
+	  	android:gravity="center"
+	  	android:orientation="vertical"
+      >
+        <Button
+	   android:id="@+id/drawBtn"
+	   android:layout_width="fill_parent"
+       android:layout_height="164dp"
+	   android:background="@drawable/selector_menu_sketch"
+	   android:layout_marginLeft="8dp"
+	   android:layout_marginRight="8dp"
+	   android:layout_marginTop="8dp"
+	   android:layout_marginBottom="8dp"
+	        />	 	
+   	<LinearLayout 
+       android:layout_width="fill_parent"
+       android:layout_height="156dp"
+       android:orientation="horizontal"
+       android:weightSum="2"
+       android:layout_marginLeft="8dp"
+       android:layout_marginRight="8dp"
+       android:layout_marginBottom="8dp">
+       
+   	    <Button
+	        android:id="@+id/placeInfoBtn"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_weight="1"
+	        android:background="@drawable/selector_menu_spot"
+	        android:layout_marginRight="8dp"
+	         />
+   	    
+   	    <Button
+            android:id="@+id/collectBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+			android:background="@drawable/selector_menu_all"
+			/>
+        </LinearLayout>
+
+   	<LinearLayout 
+       android:layout_width="fill_parent"
+       android:layout_height="156dp"
+       android:orientation="horizontal"
+       android:weightSum="2"
+       android:layout_marginLeft="8dp"
+       android:layout_marginRight="8dp"> 
+        <Button
+            android:id="@+id/stempBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:layout_marginRight="8dp"
+			android:background="@drawable/selector_menu_stamp"
+			/>
+        <Button
+            android:id="@+id/rankingBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+			android:background="@drawable/selector_menu_ranking"
+			/>
+    </LinearLayout>
+  </LinearLayout>
+    
+  	
+      	
+</LinearLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ku.seoultrace"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+    <permission
+        android:name="com.example.Searchmj.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" >
+    </permission>
+    <application
+        android:name="ParseApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/icon_store"
+        android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        >
+        
+        <activity android:name="com.ku.seoultrace.login.LoadingActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name="com.ku.seoultrace.collectdraw.DetailImageViewActivity" ></activity>  
+        <activity android:name="com.ku.seoultrace.collectdraw.CollectActivity" 
+                  android:windowSoftInputMode="stateHidden"></activity>
+        
+       <activity
+            	  android:name="com.ku.seoultrace.login.UserInfoDialog"
+           	      android:theme="@android:style/Theme.Dialog"></activity>
+        <activity android:name="com.ku.seoultrace.login.LoginActivity" > </activity>
+        <activity android:name="com.ku.seoultrace.login.ExplanationActivity"></activity>
+        <activity android:name="com.ku.seoultrace.login.MenuActivity"></activity>
+        <activity android:name="com.ku.seoultrace.login.HelpActivity"></activity>
+        
+        <activity android:name="com.ku.seoultrace.ranking.RankingListActivity"></activity>
+        
+        <activity android:name="com.ku.seoultrace.stemp.StempActivity"></activity>
+        <activity android:name="com.ku.seoultrace.stemp.StempDetailActivity"></activity>
+        
+        <activity android:name="com.ku.seoultrace.draw.DrawActivity"></activity>
+        <activity android:name="com.ku.seoultrace.draw.DrawListActivity"></activity>
+        <activity android:name="com.ku.seoultrace.placeinfo.PlaceInfoActivity"></activity>
+        <activity android:name="com.ku.seoultrace.placeinfo.Map"></activity>
+        <activity android:name="com.ku.seoultrace.placeinfo.PlaceListActivity"
+				   android:windowSoftInputMode="stateHidden"></activity>
+        
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyC6jRHBhk0bU0JO__K5yg1UG4rTiC7RY_k" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        
+    </application>
+
+</manifest>
